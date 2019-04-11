@@ -1,6 +1,8 @@
 # gatsby-source-welcomekit
 
-Pull your data from Welcome to the jungle [Welcome Kit](https://www.welcomekit.co/) to access it with GraphQL within your Gatsby project.
+Pull data from Welcome to the jungle [Welcome Kit](https://www.welcomekit.co/) to access it with GraphQL within your Gatsby project.
+
+*For now it only retrieves data from the un-authenticated [embed endpoint](http://developers.welcomekit.co/#embed).*
 
 - [Install](#install)
 - [How to use](#how-to-use)
@@ -55,6 +57,42 @@ plugins: [
 
 ## Example
 
+- List all your organization jobs
 ```graphql
-// @Todo
+query {
+  allJobOffer {
+    totalCount
+    edges {
+      node {
+        id
+        name
+        slug
+        description
+        reference
+        office {
+          id
+          name
+          city
+          country {
+            fr
+            en
+          }
+        }
+        contract_type {
+          en
+          fr
+          es
+        }
+        profile
+        recruitment_process
+        salary {
+          min
+          max
+          currency
+          period
+        }
+      }
+    }
+  }
+}
 ```
