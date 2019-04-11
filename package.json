@@ -1,0 +1,41 @@
+{
+  "name": "gatsby-source-welcomekit",
+  "version": "1.0.0",
+  "author": "Stephen Richard <stephen@source.paris> (https://source.paris)",
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "welcome-kit",
+    "welcome-kit-api",
+    "welcomekit",
+    "source"
+  ],
+  "homepage": "https://github.com/sourceinteractive/gatsby-source-welcomekit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sourceinteractive/gatsby-source-welcomekit.git"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "latest",
+    "node-fetch": "^2.3.0",
+    "query-string": "^6.4.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "babel-preset-gatsby-package": "^0.1.4"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.0.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir . --ignore __tests__",
+    "prepublish": "yarn build"
+  },
+  "description": "Pull your data from Welcome to the jungle [Welcome Kit](https://www.welcomekit.co/) to access it with GraphQL within your Gatsby project.",
+  "bugs": {
+    "url": "https://github.com/sourceinteractive/gatsby-source-welcomekit/issues"
+  }
+}
