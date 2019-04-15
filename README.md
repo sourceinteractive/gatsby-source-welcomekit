@@ -96,3 +96,7 @@ query {
   }
 }
 ```
+
+## Credits
+
+Developed for [Source Paris](https://source.paris)
