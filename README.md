@@ -12,9 +12,9 @@ Pull data from Welcome to the jungle [Welcome Kit](https://www.welcomekit.co/) t
 ## Install
 
 ```
-npm i --save gatsby-plugin-offline
+npm i --save @sourceinteractive/gatsby-source-welcomekit
 or
-yarn add --dev gatsby-plugin-offline
+yarn add --dev @sourceinteractive/gatsby-source-welcomekit
 ```
 
 ## How to use

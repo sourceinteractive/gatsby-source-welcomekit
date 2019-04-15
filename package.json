@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-source-welcomekit",
-  "version": "1.0.0",
+  "name": "@sourceinteractive/gatsby-source-welcomekit",
+  "version": "1.0.1",
   "author": "Stephen Richard <stephen@source.paris> (https://source.paris)",
   "license": "MIT",
   "keywords": [
